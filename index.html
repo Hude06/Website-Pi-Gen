@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Kameron:wght@700&display=swap" rel="stylesheet">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script src="" async defer></script>
+        <h1 id="pi"></h1>
+        </body>
+    <style>
+        body{
+            background-color: #ff7a5c;
+        }
+        #pi {
+            font-size: 50px;
+            padding-left: 500px;
+            font-family: 'Kameron', serif;
+
+        }
+    </style>
+    <script>
+        k = 1
+        s = 0
+        
+        function setup_dom() {
+
+        }
+        setup_dom()
+
+        setInterval(()=>{
+            for(let i=0; i<1000000; i++) {
+                if (i % 2 == 0) {
+                    s += 4/k
+                } else {
+                    s -= 4/k
+                }
+                k += 2
+            }
+            // console.log(s)
+            document.getElementById('pi').innerText = ""+s
+        },50)
+        
+        
+        
+        
+            </script>
+        </html>
